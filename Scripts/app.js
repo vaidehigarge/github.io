@@ -44,7 +44,7 @@
     }
 
     function DisplayServicesPage() {
-        console.log("Calling ServicessPage");
+        console.log("Calling ServicesPage");
     }
 
     function DisplayContactPage() {
@@ -77,6 +77,6 @@
         }
 
     }
-    window.addEventListener("Load", Start);
+    window.addEventListener("load", Start);
 
 })()
