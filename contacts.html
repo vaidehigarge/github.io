@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacts</title>
+
+
+    <!--css section-->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./Content/app.css">
+</head>
+<body>
+
+<header>
+</header>
+
+<main class="container">
+    <h1>Contacts</h1>
+    <form class="col-lg-6 col-md-10 col-sm-10 mb-4">
+
+        <div class=" input-group-text mb-3">
+            <label for="fullName" class="input-group-text">Full Name</label>
+            <input id="fullName" name="fullName" type="Text" class="form-control"
+            aria-describedby="fullName-error"  required>
+            <span id="fullName-error" class="text-danger"></span>
+        </div>
+
+        <div class=" input-group-text mb-3">
+            <label  for="contactNumber" class="input-group-text">Contact Number</label>
+            <input id="contactNumber" name="contactNumber" type="tel" class="form-control"
+                   aria-describedby="contactNumber-error"  required>
+            <span id="contactNumber-error" class="text-danger"></span>
+        </div>
+
+
+
+        <div class=" input-group-text mb-3">
+            <label for="emailAddress" class="input-group-text">Email Address</label>
+            <input id="emailAddress" name="emailAddress" type="email" class="form-control"
+                   aria-describedby="emailAddress-error"  required>
+            <span id="emailAddress-error" class="text-danger"></span>
+        </div>
+
+        <div class=" input-group-text mb-3">
+            <span class="input-group-text">Message</span>
+            <textarea id="message" name="message"  class="form-control"
+                      aria-describedby="Message Area" aria-label="Message Area" >  </textarea>
+        </div>
+
+
+
+        <div class="mb-3 form-check">
+            <input id="subscriptionCheckbox" type="checkbox" class="form-check-input">
+            <label class="form-check-label" for="subscriptionCheckbox">Subscribe to our contact list</label>
+        </div>
+        <button id="sendButton" name="sendButton" type="submit" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Submit</button>
+        <button id="cancelButton" name="cancelButton" type="reset" class="btn btn-warning"><i class="fa-solid fa-rotate-left"></i> Cancel</button>
+
+    </form>
+
+    <div class="col-lg-6 col-md-4">
+        <a href="contacts-list.html" class="btn btn-outline-primary mt-4"><i class="fa-solid fa-users"></i>Show Contacts list </a>
+    </div>
+
+</main>
+
+<!-- Scripting section-->
+<script src="./Scripts/namespace.js"></script>
+<script src="./Scripts/contact.js"></script>
+<script src="./Scripts/app.js"></script>
+
+</body>
+</html>
